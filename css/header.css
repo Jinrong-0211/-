@@ -46,10 +46,10 @@ ul{list-style:none;}
     box-sizing:border-box;
 }
 .header_fixed>ul>li .input{
-    width:37px;height:27px;
+    width:35px;height:27px;
     border:0;outline:0;
     background:url("../hengli/icon_b.png");
-    background-size:29px 66px;
+    background-size:28px 66px;
     background-position:5px 2px;
     margin:21.5px 6px 0 35px;
     cursor:pointer;
