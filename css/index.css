@@ -1,0 +1,292 @@
+		body{
+			color:#444;
+			padding: 0;
+			font:400 14px/1.6 'Helvetica Neue',Helvetica, "Microsoft YaHei";
+		}
+		/*banner*/
+		.banner img{
+			width:100%;
+			font-size: 0;
+		}
+		/*scroll*/
+		.scroll{
+			width:1200px;
+			margin:50px auto;
+		}	
+		.scroll>ul:after{
+			content:"";
+			display:block;
+			clear:both;
+		}
+		.scroll>ul>li{
+			width:150px;height:160px;
+			border-bottom:4px solid #ccc;
+			float:left;
+			text-align:center;
+			cursor: pointer;
+		}
+		.scroll>ul>li>div{
+			width:150px;height:130px;
+			border-right:1px solid #ddd;
+			margin-right:-1px;
+		}
+		.scroll>ul>li>div>span{
+			width:90px;height:90px;
+			display:inline-block;
+			vertical-align:middle;
+			overflow:hidden;
+			background-repeat:no-repeat;
+			background-image:url("../hengli/icon_a.png");	
+			background-size:270px auto;
+		}
+		.scroll>ul>li>div>h4{
+			width:150px;
+			margin-top:10px;	
+			font-size:18px;
+			font-weight:400;
+		}
+		.scroll>ul>li:hover h4{
+			color:#00954c;
+		}
+		.scroll>ul>li:hover{
+			border-bottom:4px solid #00954c;
+		}
+		.scroll>ul div #s2{
+			background-position:0 -90px;
+		}	
+		.scroll>ul div #s3{
+			background-position:0 -180px;
+		}	
+		.scroll>ul div #s4{
+			background-position:0 -270px;
+		}	
+		.scroll>ul div #s5{
+			background-position:0 -360px;
+		}		
+		.scroll>ul div #s6{
+			background-position:0 -450px;
+		}	
+		.scroll>ul div #s7{
+			background-position:0 -540px;
+		}		
+		.scroll>ul div #s8{
+			background-position:0 -630px;
+		}	
+		.scroll>ul .last{
+			border-right:0;
+		}
+		/*scorll_text*/
+		.scroll_text{
+			width:1200px;
+			text-align:center;
+			margin:50px auto;
+			position:relative;
+		}
+		.scroll_text>.btn_left{
+			font-size: 40px;
+			color: rgb(0, 149, 76);
+			position: absolute;
+			z-index: 10;
+			top: 50%;
+			width: 70px;
+			line-height: 70px;
+			height: 70px;
+			text-align: center;
+			font-weight: bold;
+			cursor: pointer;
+			background-image: url("../hengli/btn_icon.png");
+			background-size: 140px;
+			overflow: hidden;
+			background-repeat: no-repeat;
+		}
+		.scroll_text .btn_right{
+			font-size: 40px;
+			cursor: pointer;
+			color: #00954c;
+			position: absolute;
+			z-index: 10;
+			top: 50%;
+			right:0;
+			width: 70px;
+			line-height: 70px;
+			height: 70px;
+			overflow: hidden;
+			text-align: center;
+			font-weight: bold;
+			cursor: pointer;
+			background-image: url("../hengli/btn_icon.png");
+			background-position:100% 0px;
+			background-repeat: no-repeat;
+			background-size: 140px auto;
+		}
+		.scroll_text h5{
+			font-size:24px;
+			font-weight:400;
+			color:#444;
+			cursor: pointer;
+		}
+		.scroll_text ul .t_t_d{
+			width:840px;height:1px;
+			margin: 20px auto 20px;
+		}
+		.scroll_text ul .t_t_d span{
+			width:150px;height:1px;
+			font-size:0;
+			background-color:#ccc;
+			display:inline-block;
+			vertical-align:top;
+		}
+		.scroll_text ul .wenben{
+			width:840px;height:77px;
+			text-align:justify;
+			color:#666;
+			font-size:14px;
+			margin:auto;
+			cursor: pointer;
+		}	
+		.scroll_text ul .text2,.text3,.text4,.text5,.text6,.text7,.text8{
+			display:none;
+		}
+/* banner2 */
+		.banner2{
+			width:100%;
+			height:376px;
+			background:rgba(240, 240, 240, 0.7);
+			position: relative;
+			margin: 100px 0;
+		}
+		/* .banner2>.box_1166{
+			width: 1166px;
+		} */
+		.banner2>.box_1166 ul::before,.banner2>.box_1166 ul::after{
+			content: "";
+			display: table;
+		}
+		.banner2>.box_1166 ul::after{
+			clear: both;
+		}
+		.banner2 li{
+			width:1920px;
+			height: 376px;
+			float:left;
+		}
+		/* 左边 */
+		.banner2 .left_img{
+			width:768px;
+			height: 376px;
+			overflow: hidden;
+			float: left;
+		}
+		.banner2 .left_img img{			
+			transition:all 0.3s linear;
+		}
+		.banner2 .left_img img:hover{
+			transform: scale(1.05);
+			opacity: .8;
+		}
+		/* 右边 */
+		.banner2 .right_box{
+			padding: 20px 0 0 50px;
+			float: left;
+			box-shadow: border-box;
+		}
+		.banner2 .right_box .right_text{
+			width: 500px;	
+			margin: 20px;
+		}
+		.banner2 .right_box .right_text h4{
+			font-size: 30px;
+			font-weight: bold;
+			margin-bottom:15px; 
+			color:#0c5ca5;
+		}
+		.banner2 .right_box .right_text .title::before,.banner2 .right_box .right_text .title::after{
+			content: "";
+			display: table;
+		}
+		.banner2 .right_box .right_text .title::after{
+			clear: both;
+		}
+		.banner2 .right_box .right_text .left{
+			border-right:1px solid #ccc;
+			font-size:30px; 
+			padding-right: 20px;
+			line-height: 1.1;
+			float: left;
+		}
+		.banner2 .right_box .right_text .left p{
+			text-align: justify;
+			font-size: 14px;
+		}
+		.banner2 .right_box .right_text .right{
+			width: 360px;
+			margin-left: 125px;
+		}
+		.banner2 .right_box .right_text .right h5 {
+			font-size: 22px;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			
+		}
+		.banner2 .right_box .right_text .right h5 a{
+			color: #666;
+			transition: .2s;
+		}
+		.banner2 .right_box .right_text .right h5 a:hover{
+			color:#0c5ca5;
+		}
+		.banner2 .right_box .right_text .title{
+			margin: 20px 0;
+		}
+		.gray_more_a a{
+			transition: all .3s linear;
+			color:#fff;
+			background-color: #808080;
+			font-size: 12px;
+			line-height: 18px;
+			padding: 0 8px;
+			display: inline-block;
+			margin-top:30px; 
+		}
+		.gray_more_a a:hover{
+			background-color: #0c5ca5;
+		}
+		/* 按钮 */
+		.banner2 .btn{
+			cursor: pointer;
+			z-index: 4;
+			position: absolute;
+			width: 50px;
+			height: 50px;
+			background-image:url("../hengli/btn.png");
+			background-color: #fff;
+			background-repeat: no-repeat;
+			background-size: 100px auto;
+			top: 50%; 
+		}
+		/* 左右按钮样式 */
+		.banner2 .box_1166 .left_btn{
+			left: 50%;
+			margin-left: -43px;
+			border-right: 1px solid #ddd;
+			z-index: 6;
+			transition: all .3s linear;
+		}
+		.banner2 .box_1166 .right_btn{
+			left: 50%;
+			margin-left:9px; 
+			background-position:0 -50px; 
+			z-index: 6;
+			transition: all .3s linear;
+		}
+		/* 左右按钮悬浮样式 */
+		.banner2 .box_1166 .left_btn:hover{
+			background-color: #0c5ca5;
+			background-position:-50px 0px;
+		}
+		.banner2 .box_1166 .right_btn:hover{
+			background-color: #0c5ca5;
+			background-position:-50px -50px;
+		}
+		/* banner3 */

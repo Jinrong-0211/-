@@ -1,0 +1,133 @@
+*{margin: 0;padding: 0;}
+.header a{
+    text-decoration: none;
+    color: #282a2c;
+    padding-left:36px;
+    font-size: 14px;
+}
+.header a:hover{
+    color: #5291c4
+}
+.header{
+    background: #fff;
+    width: 100%;
+}
+.header::before,.header::after{
+    content: "";
+    display: table;
+}
+.header::after{
+    clear: both;
+}
+.w_960{
+    width: 960px;
+    margin: 0 auto;
+}
+.header .image{
+    float: left;
+}
+.a_3{
+    float: right;
+    line-height: 60px;
+}
+.bg{
+    background:#fff url("../恒力集团企业邮箱/s.jpeg") no-repeat center;
+    min-height: 690px;
+    width: 100%;
+}
+.bg::before,.bg::after{
+    content: "";
+    display: table;
+}
+.bg::after{
+    clear: both;
+}
+.email_log{
+    width: 382px;
+    padding: 0 36px 37px;
+    margin: 140px auto 0;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow:0 10px 30px 0 rgba(0,0,0,.2);
+    position: relative;
+    box-sizing: border-box;
+}
+.top_log{
+    height: 100%;
+    color: #008dfa;
+    border-bottom: 3px solid #008efb;
+    padding: 28px 0 15px;
+    text-align: center;
+    font-size: 18px;
+}
+.login_name,.login_upwd{
+    margin: 20px 0;
+    width: 100%;
+    height: 38px;
+    position: relative;
+    border: 1px solid #cacaca;
+    border-radius: 4px;
+}
+.login_name img{
+    position: absolute;
+    top: 12px;left: 10px;
+}
+.login_upwd img{
+    position: absolute;
+    top: 12px;left: 10px;
+}
+.login_name input,.login_upwd input{
+    border: 0;
+    width: 242px;
+    height: 38px;
+    padding: 0;
+    float: left;
+    font-size: 14px;
+    line-height: 38px;
+    background: transparent;
+    margin-left:35px; 
+    outline: 0;
+}
+.border_blue{
+    border-color:#008efb;
+    box-shadow:0,0,3px,0 rgba(0,142,251,0.5);
+}
+.check{
+    width: 100%;
+    font-size: 14px;
+    color: rgba(0, 0,0, .35);
+    margin: 16px 0;
+}
+.check::before,.check::after{
+    content: "";
+    display: table;
+}
+.check::after{
+    clear: both;
+}
+.remember{
+    float: left;
+}
+.SSL{
+    float: right;
+}
+.check input{
+    width: 16px;
+    height: 16px;
+    vertical-align: bottom;
+    background: transparent;
+}
+.btn{
+    width: 100%;
+    line-height:42px;
+    font-size: 16px;
+    color: #fff; 
+    text-align: center;
+    background: #008efb;
+    cursor:pointer;
+    border: 0;
+    outline: 0;
+}
+.btn:hover{
+    background: #0076e3;
+}

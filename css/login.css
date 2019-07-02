@@ -1,0 +1,95 @@
+*{margin:0;padding:0;}
+html{width:100%;height:100%;}
+body{
+    background:url("../恒力集团OA云办公/bj1.jpg") no-repeat ;
+    background-size: 100% 100%;
+}
+.h-150{
+    height:150px;
+}
+.logo{
+    width:600px;
+    margin:0 auto 50px;
+    text-align:center;
+}
+.logo img{
+    max-width:400px;
+    max-height:150px;	
+}
+.login_nav{
+    width:280px;
+    margin:auto;
+}
+.login_uname{
+    height:45px;		
+}
+.input{
+    width:280px;
+    height:45px;
+    background:url("../恒力集团OA云办公/input_wev8.png");
+    text-align:center;
+    margin:25px auto;
+    position:relative;
+}
+.input label{
+    font-size:14px;
+    color: #D5E7E4 !important;
+    position:absolute;
+    top:12px;left:49px;
+}
+.input input{
+    width:210px;
+    height:25px;
+    border:0;
+    outline:0;
+    vertical-align:middle;
+    font-size:14px;
+    padding-left:10px;
+    color:#fff;
+    box-sizing:border-box;
+    background:transparent !important;
+    position:absolute;
+    top:10px;left:40px;
+}
+.input img{
+    position:absolute;
+    top:10.5px;left:20px;
+}
+.gotupwd{
+    width:210px;height:28px;
+    margin:0 auto;
+    text-align:right;
+    position:relative;
+}
+.gotupwd a{
+    text-decoration:none;
+    color:#D5E7E4 !important;
+    font-size:14px;	
+    display:inline-block;
+    height:28px;
+    margin-left:0px;
+    position:absolute;
+    top:3px;right:-15px;
+}
+.btn .login{
+    width:280px;
+    height:45px;
+    clear:both;
+    border:0;
+    background:url("../恒力集团OA云办公/btn_login_wev8.png");
+    font-size:14px;
+    outline:none;
+    color:rgb(87,129,151);
+    cursor: pointer;
+}
+.btn .login:hover{
+    background:url("../恒力集团OA云办公/btn_login_wev9.png")
+}
+.footer{
+    width:100%;
+    color:#fff;
+    position:fixed;
+    left:0px;bottom:0px;
+    text-align:center;
+    font-size:11px;
+}

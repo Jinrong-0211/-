@@ -1,0 +1,122 @@
+.top{font-size: 0;}
+.big_box{width: 100%;height:50px;background-color:#e7e7e7;  }
+.box_1200{width: 1200px;margin: auto;}
+.box_1200::after{content: "";display:block;clear: both}
+.top{width: 100%;overflow: hidden;}
+.e7_div{
+    height: 50px; line-height: 50px; 
+    float: left;
+}
+.e7_div ul li{
+    float: left;
+    transition: .5s;
+}
+.e7_div ul .fir{
+    background-color: #0c5ca5;
+}
+.e7_div ul .fir a{
+    color:#fff;
+}
+.e7_div ul li:hover{
+    background-color: #0c5ca5;
+}
+.e7_div ul li a{
+    color: #444444;
+    font-size: 14px;
+    padding: 0 20px;          
+}
+.e7_div ul li:hover a{
+    color:#fff;
+}
+.right_input{
+    float: right;
+    width: 170px;
+    height: 26px;
+    margin-top: 12px;
+    padding-right: 26px;
+    background-image: url("../li2/search.png");
+    background-size: 33px 26px;
+    background-position: 8px 0;
+    background-color: #ec881e;
+    box-sizing:border-box;
+}
+.right_input:hover{
+    background-color: #0c5ca5;
+}
+.right_input input{
+    width: 100%;
+    height: 26px;
+    padding: 3px 15px;
+    line-height: 20px;
+    box-sizing:border-box;
+}
+/* content */
+.b_big_box{
+    width: 100%;
+    height: 730px;
+    margin-top:70px;
+    position: relative;
+}
+.content_blue{
+    margin-top: 70px;
+    width: 950px;
+    height: 500px;
+    background-color: #0c5ca5;
+    color: #ffffff;
+}
+.content_blue_text{
+    width: 780px;
+    padding: 40px 250px 0 0;
+    box-sizing: border-box;
+    float: right;
+}
+.content_blue_text h4{
+    font-size: 30px;
+    font-weight: bold;
+}
+.content_blue_text .t_t{
+    margin:20px 0 20px 15px;
+}
+.line_w200_white{
+    display: inline-block;
+    background-color: #fff;
+    vertical-align: top;
+    width:200px;
+    height: 2px;
+    overflow: hidden;
+    font-size: 0;
+}
+.content_blue_text .t_d{
+    font-size: 16px;
+}
+.content_blue_text .t_d p{
+    margin-bottom: 15px;
+    text-align: justify;
+}
+.t_d_d{
+    margin-top: 30px;
+    width: 680px;
+    padding-left: 170px;
+}
+.t_d_d h5{font-size: 18px;}
+.t_d_d p{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: justify;
+}
+.right_png{
+    width: 520px;
+    z-index: 5;
+    float: right;
+}
+.right_png img{
+    border: none;
+    vertical-align: top;
+}
+.content_left{
+    float: left
+}
+.right_png{
+    position: absolute; 
+    right: 145px;
+}

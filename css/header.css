@@ -1,0 +1,123 @@
+h1,h2,h3,h4,h5,h6{font-weight: 400;}
+*{margin:0;padding:0;} 
+a{text-decoration:none; }
+ul{list-style:none;}
+/*导航栏*/
+.header_fixed {
+    width:100%;
+    height:70px;
+    position: fixed;
+    z-index:1000;
+    background:#e7e7e7;
+}
+.header_fixed>ul{
+    width: 1200px;
+    margin: 0 auto;
+}
+.header_fixed>ul::before,.header_fixed>ul::after{
+    content: "";
+    display: table;
+}
+.header_fixed>ul::after{
+    clear: both;
+}
+.header_fixed>ul>li{
+    height:70px;
+    float: left;
+    position: relative;
+    z-index: 11;
+}
+.header_fixed>ul .img img{
+    border:none;
+    margin-top: 15px;
+    margin-right:20px;
+}		
+.header_fixed>ul .img img{
+    width:140px;height:40px;
+}
+.header_fixed>ul>li>a{
+    font-size:16px;
+    line-height:70px;
+    padding:0 18px;
+    color:#444;
+}
+.nav_li_active{
+    border-bottom:3px solid #0c5ca5;
+    box-sizing:border-box;
+}
+.header_fixed>ul>li .input{
+    width:37px;height:27px;
+    border:0;outline:0;
+    background:url("../hengli/icon_b.png");
+    background-size:29px 66px;
+    background-position:5px 2px;
+    margin:21.5px 6px 0 35px;
+    cursor:pointer;
+}
+.header_fixed>ul  .email label{
+    float:left;
+    line-height:70px;
+    color:#0c5ca5;
+    font-size:16px;
+    cursor:pointer;
+}
+.header_fixed>ul .email>div{
+    width:25px;height:25px;
+    border:0;
+    background:url("../hengli/icon_b.png");
+    background-size:27px 66px;
+    background-position:-3px -20px;
+    margin:22.5px 5px 0 5px;
+    float:left;
+    cursor:pointer;
+}
+.header_fixed>ul  .login>label{
+    float:left;
+    line-height:70px;
+    color:#0c5ca5;
+    font-size:16px;
+    cursor:pointer;
+}
+.header_fixed>ul label a{
+    color:#444;
+    padding:0;
+}
+.header_fixed>ul .login div{
+    width:25px;height:25px;
+    border:0;
+    background:url("../hengli/icon_b.png");
+    background-size:27px 66px;
+    background-position:-4px -43px;
+    margin:22.5px 5px 0 10px;
+    float:left;
+    cursor:pointer;
+    box-sizing: border-box;
+}
+/* 下拉菜单 */
+.dropdown_menu{
+    display: none;
+    border: 0;
+    text-align: center;
+    border-bottom: 3px solid #0c5ca5;
+    background-color: rgba(255,255,255,.8);
+    border-top:3px solid #0c5ca5;
+    position: absolute;
+    z-index: 11;
+    top: 67px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.header_fixed ul li:hover ul{
+    display: block;
+}
+.dropdown_menu li a{
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #444;
+    transition: .2s;
+}
+.dropdown_menu li a:hover{
+    color: #fff;
+    background: #0c5ca5;
+}	
