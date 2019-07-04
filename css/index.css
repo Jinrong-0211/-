@@ -151,9 +151,8 @@
 		.banner2{
 			width:100%;
 			height:376px;
-			background:rgba(240, 240, 240, 0.7);
-			
-			margin: 100px 0;
+			background:rgba(240, 240, 240, 0.7);	
+			margin: 50px 0;
 		}
 		 .banner2>.box_1166{
 			width: 1166px;
@@ -177,13 +176,14 @@
 			height: 376px;
 			overflow: hidden;
 			float: left;
+			background: #000;
 		}
 		.banner2 .left_img img{			
 			transition:all 0.3s linear;
 		}
 		.banner2 .left_img img:hover{
 			transform: scale(1.05);
-			opacity: .8;
+			opacity: .7;
 		}
 		/* 右边 */
 		.banner2 .right_box{
@@ -288,4 +288,88 @@
 			background-color: #0c5ca5;
 			background-position:-50px -50px;
 		}
-		/* banner3 */
+		/* about恒力*/
+		.about{
+			width: 100%;
+			height: 400px;
+			margin-bottom: 50px;
+		}
+		.about::before,.about::after{
+			content:"";
+			display: table;
+		}
+		.about::after{
+			clear: both;
+		}
+		/* 左侧文本 */
+		.about .left_text{
+			width: 50%;
+			height: 100%;
+			padding-right: 100px;
+			font-size: 16px;
+			color: #fff;
+			background: #0c5ca5;
+			float: left;
+			box-sizing: border-box;
+		}
+		.about .left_text .t_l_box{
+			width: 500px;
+			float: right;
+			padding: 30px 0 0 0;
+		}
+		.about .left_text .t_l_box h4{
+			font-size: 30px;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+		.about .left_text .t_l_box .t_l_m{
+			height: 12.8em;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+		.about .left_text .t_l_box .t_l_m p{
+			margin-bottom: 1.6em;
+			text-align: justify;
+		}
+		.about .t_l_btn{
+			margin-top:30px;
+		}
+		.about .t_l_btn a:hover{
+			color: #fff;
+			box-shadow: 0 5px 10px rgba(0,0,0,.2);
+			background: #ec881e;
+		}
+		.about .t_l_btn a{
+			transition: all .3s linear;
+			color:#0c5ca5;
+			background-color: #fff;
+			font-size: 12px;
+			line-height: 18px;
+			padding: 0 8px;
+			display: inline-block;
+			margin-top:20px; 
+
+		}
+		/* 右侧图片 */
+		.about .right_img{
+			width: 50%;
+			height: 100%;
+			background: #000;
+			overflow: hidden;
+			text-align: center;
+			float: right;
+		}
+		.about .right_img img{
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			border: none;
+		}
+		.about .right_img img{			
+			transition:all 0.3s linear;
+		}
+		.about .right_img img:hover{
+			transform: scale(1.05);
+			opacity: .7;
+		}
+
