@@ -7,6 +7,9 @@
     height: 50px; line-height: 50px; 
     float: left;
 }
+body{
+    font: 400 14px/1.6 'Helvetica Neue',Helvetica, "Microsoft YaHei",sans-serif;
+}
 .e7_div ul li{
     float: left;
     transition: .5s;
@@ -35,10 +38,11 @@
     margin-top: 12px;
     padding-right: 26px;
     background-image: url("../li2/search.png");
-    background-size: 33px 26px;
+    background-size: 33px 25px;
     background-position: 8px 0;
     background-color: #ec881e;
     box-sizing:border-box;
+    cursor: pointer;
 }
 .right_input:hover{
     background-color: #0c5ca5;
@@ -49,6 +53,7 @@
     padding: 3px 15px;
     line-height: 20px;
     box-sizing:border-box;
+    outline: none;
 }
 /* content */
 .b_big_box{
@@ -59,7 +64,7 @@
 }
 .content_blue{
     margin-top: 70px;
-    width: 950px;
+    width: 1140px;
     height: 500px;
     background-color: #0c5ca5;
     color: #ffffff;
@@ -96,7 +101,7 @@
 .t_d_d{
     margin-top: 30px;
     width: 680px;
-    padding-left: 170px;
+    padding-left: 360px;
 }
 .t_d_d h5{font-size: 18px;}
 .t_d_d p{
@@ -118,5 +123,5 @@
 }
 .right_png{
     position: absolute; 
-    right: 145px;
+    right: 350px;
 }

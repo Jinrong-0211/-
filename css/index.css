@@ -150,12 +150,12 @@
 /* banner2 */
 		.banner2{
 			width:100%;
-			height:376px;
+			height:470px;
 			background:rgba(240, 240, 240, 0.7);	
 			margin: 50px 0;
 		}
-		 .banner2>.box_1166{
-			width: 1166px;
+		.banner2>.box_1166{
+			width: 100%;
 			position: relative;
 		} 
 		.banner2>.box_1166 ul::before,.banner2>.box_1166 ul::after{
@@ -166,14 +166,14 @@
 			clear: both;
 		}
 		.banner2 li{
-			width:1358px;
-			height: 376px;
+			width:100%;
+			height: 470px;
 			float:left;
 		}
 		/* 左边 */
 		.banner2 .left_img{
-			width:768px;
-			height: 376px;
+			width:50%;
+			height: 470px;
 			overflow: hidden;
 			float: left;
 			background: #000;
@@ -187,13 +187,14 @@
 		}
 		/* 右边 */
 		.banner2 .right_box{
+			width: 50%;
 			padding: 20px 0 0 50px;
-			float: left;
-			box-shadow: border-box;
+			float: right;
+			box-sizing: border-box;
 		}
 		.banner2 .right_box .right_text{
 			width: 500px;	
-			margin: 20px;
+			margin: 20px; 
 		}
 		.banner2 .right_box .right_text h4{
 			font-size: 30px;
@@ -249,9 +250,12 @@
 			padding: 0 8px;
 			display: inline-block;
 			margin-top:30px; 
+			transform: translateZ(0);
+			font-weight: bold;
 		}
 		.gray_more_a a:hover{
 			background-color: #0c5ca5;
+			transform: translateY(-2px);
 		}
 		/* 按钮 */
 		.banner2 .btn{
@@ -268,13 +272,13 @@
 		}
 		/* 左右按钮样式 */
 		.banner2 .box_1166 .left_btn{
-			left: 61.5%;
+			right: 50%;
 			border-right: 1px solid #ddd;
 			z-index: 6;
 			transition: all .3s linear;
 		}
 		.banner2 .box_1166 .right_btn{
-			left: 66%;
+			left: 50%;
 			background-position:0 -50px; 
 			z-index: 6;
 			transition: all .3s linear;
@@ -338,6 +342,7 @@
 			color: #fff;
 			box-shadow: 0 5px 10px rgba(0,0,0,.2);
 			background: #ec881e;
+			transform: translateY(-2px);
 		}
 		.about .t_l_btn a{
 			transition: all .3s linear;
@@ -348,6 +353,8 @@
 			padding: 0 8px;
 			display: inline-block;
 			margin-top:20px; 
+			transform: translateZ(0);
+			font-weight: bold;
 
 		}
 		/* 右侧图片 */
@@ -372,4 +379,69 @@
 			transform: scale(1.05);
 			opacity: .7;
 		}
-
+		/* end一行 */
+		.end_bigbox{
+			box-sizing: border-box;
+			color: #fff;
+			background-color: #4b78bd;
+			background-image: url("../恒力集团/box_bj.jpg");
+			background-repeat: no-repeat;
+			background-position: center top;
+			height: 430px;
+			padding: 50px 0;
+			min-width: 1200px;
+		}
+		.end_bigbox>.w_1200{
+			width: 1200px;
+			margin: 0 auto;
+		}
+		.end_bigbox>.w_1200>.hide_box{
+			height: auto;
+			overflow:hidden;
+		}
+		.end_bigbox>.w_1200>.hide_box>ul{
+			padding-top: 15px;
+			margin-left: -50px;
+			margin-right: -50px;
+		}
+		.end_bigbox>.w_1200>.hide_box>ul>li{
+			float: left;
+			width: 33.3%;
+			border-right: 2px solid #fff;
+			margin-right: -2px;
+		}
+		.hide_box>ul>li>.end_box{
+			padding:30px 80px 0 80px;
+			transition: all .3s linear;
+		}
+		.hide_box>ul>li>.end_box h4{
+			font-size: 30px;
+			font-weight: bold;
+			height: 85px;
+		}
+		.hide_box>ul>li>.end_box h5{
+			font-size: 22px;
+		}
+		.hide_box>ul>li>.end_box .t_t{
+			height: 95px;
+			font-size: 16px;
+			margin-top: 10px;
+		}
+		.hide_box>ul>li>.end_box .t_d a{
+			transition: all .3s linear;
+			color:#0c5ca5;
+			background-color: #fff;
+			font-size: 12px;
+			font-weight: bold;
+			line-height: 18px;
+			padding: 0 8px;
+			display: inline-block;
+			margin-top:20px; 
+			transform: translateZ(0);
+		}
+		.hide_box>ul>li>.end_box .t_d a:hover{
+			color: #fff;
+			box-shadow: 0 5px 10px rgba(0,0,0,.2);
+			background: #ec881e;
+			transform: translateY(-2px);
+		}

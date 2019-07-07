@@ -16,11 +16,11 @@
             <ul class="dropdown_menu" >
                 <li><a href="../html/two.html">总裁致辞</a> </li>
                 <li><a href="../html/two_2.html">集团简介</a> </li>
-                <li><a href="../html/two_3">集团荣誉</a> </li>
-                <li><a href="../html/two_4">集团资质</a> </li>
-                <li><a href="../html/two_5">党群工作</a> </li>
-                <li><a href="../html/two_6">大事预览</a> </li>
-                <li><a href="../html/two_7">恒力文化</a> </li>
+                <li><a href="../html/two_3.html">集团荣誉</a> </li>
+                <li><a href="../html/two_4.html">集团资质</a> </li>
+                <li><a href="../html/two_5.html">党群工作</a> </li>
+                <li><a href="../html/two_6.html">大事预览</a> </li>
+                <li><a href="../html/two_7.html">恒力文化</a> </li>
             </ul>
         </li>
         <li>
