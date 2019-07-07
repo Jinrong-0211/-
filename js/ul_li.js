@@ -15,6 +15,7 @@
         </div>
         <div class="right_input">
             <input type="text">
+            <input type="button" class="seach">
         </div>
     </div>
 </div>
