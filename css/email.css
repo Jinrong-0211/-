@@ -32,7 +32,7 @@
 }
 .bg{
     background:#fff url("../恒力集团企业邮箱/s.jpeg") no-repeat center;
-    min-height: 690px;
+    min-height: 835px;
     width: 100%;
 }
 .bg::before,.bg::after{

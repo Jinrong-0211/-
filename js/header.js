@@ -35,9 +35,9 @@
             </ul>
         </li>
         <li>
-            <a href="#">产业与品牌</a>
+            <a href="../html/four.html">产业与品牌</a>
             <ul class="dropdown_menu">
-                <li><a href="">炼油</a> </li>
+                <li><a href="../html/four_1.html">炼油</a> </li>
                 <li><a href="">石化</a> </li>
                 <li><a href="">精细化工</a> </li>
                 <li><a href="">化纤</a> </li>

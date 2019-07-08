@@ -1,0 +1,178 @@
+._big_box{
+    min-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+    background-color: #fff;
+}
+._big_box::before,._big_box::after{
+    content: "";
+    display: table;
+}
+._big_box::after{
+    clear: both;
+}
+.w_1200{
+    width: 1200px;
+    margin: 0 auto;
+}
+.w_1200 dl{
+    width: 1200px;
+    margin: 0 auto;
+}
+.w_1200 dl dt{
+    width: 600px;
+    margin-left:100px;
+    float: right; 
+}
+.w_1200 dl dd{
+    font-size: 16px;
+    color: #666;
+    padding-top: 8px;
+    line-height: 2;
+}
+p{
+    text-align: justify;
+}
+/* box_shadow */
+.box_shadow{
+    box-shadow:0 -20px 20px rgba(0,0,0,.08);
+    background-color: #fff;
+    margin: 0 auto;
+    min-width: 1200px;
+}
+.box_shadow::before,.box_shadow::after{
+    content: "";
+    display: table;
+}
+.box_shadow::after{
+    clear: both;
+}
+.box_shadow>ul{
+    margin: 50px 0;
+    text-align: center;
+}
+.box_shadow ul::before,.box_shadow ul::after{
+    content: "";
+    display: table;
+}
+.box_shadow ul::after{
+    clear: both;
+}
+.box_shadow ul li{
+    float: left;
+    width: 12.5%;
+}
+.box_shadow ul li a{
+    padding: 25px 15px;
+    text-align: center;
+    display: block;
+    transition: all .3s linear;
+    color: #444;
+}
+.box_shadow ul li a:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.2);
+    transform: translateY(-5px);
+    color: #0c5ca5;
+}
+.box_shadow ul li a span{
+    width: 90px;
+    height: 90px;
+    background-image: url("../hengli/icon_a.png"); 
+    background-size: 270px auto;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    font-size:0;
+    overflow: hidden;
+}
+.box_shadow ul li a h5{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.w_1200 ul li a .bg_1{
+    background-position: -180px 0;
+}
+.w_1200 ul li a .bg_2{
+    background-position: -180px -90px;
+}
+.w_1200 ul li a .bg_3{
+    background-position: -180px -180px;
+}
+.w_1200 ul li a .bg_4{
+    background-position: -180px -270px;
+}
+.w_1200 ul li a .bg_5{
+    background-position: -180px -360px;
+}
+.w_1200 ul li a .bg_6{
+    background-position: -180px -450px;
+}
+.w_1200 ul li a .bg_7{
+    background-position: -180px -540px;
+}
+.w_1200 ul li a .bg_8{
+    background-position: -180px -630px;
+}
+.gray_bj{
+    background-color: #e7e7e7;
+}
+.gray_bj .scroll{
+    position: relative;
+    height: 70px;
+    padding: 0 30px;
+}
+.tempWrap{
+    overflow: hidden;
+    width: 1140px;
+    height: 70px;
+}
+.gray_bj .scroll .tempWrap ul{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.gray_bj .scroll .tempWrap ul li{
+    float: left;
+    width: 190px;
+    text-align: center;
+}
+.gray_bj .scroll .tempWrap ul li a{
+    transition: all .3s linear;
+}
+.gray_bj .scroll .tempWrap ul li a:hover{
+    color: #0c5ca5;
+}
+.gray_bj .scroll .tempWrap ul li a img{
+    border: none;
+    vertical-align: top;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: .4;
+}
+.gray_bj .scroll .tempWrap ul li a img:hover{
+    opacity: 1;
+}
+.btn{
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 60px;
+    font: bold;
+    color: #31b731;
+    position: absolute;
+    top: 0;
+    background-image: url("../hengli/btn_icon.png");
+    background-size: 140px auto;
+    background-repeat: no-repeat;
+}
+.prev{
+    left: -35px;
+}
+.next{
+    right: -35px;
+    background-position: -70px 0;
+}
