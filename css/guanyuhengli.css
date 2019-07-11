@@ -1,17 +1,10 @@
 .top{font-size: 0;}
-.big_box{width: 100%;height:50px;background-color:#e7e7e7;  }
-.box_1200{width: 1200px;margin: auto;}
-.box_1200::after{content: "";display:block;clear: both}
+.big_box{height:50px;background-color:#e7e7e7;  }
 .top{width: 100%;overflow: hidden;}
 .e7_div{
     height: 50px; line-height: 50px; 
-    float: left;
-}
-body{
-    font: 400 14px/1.6 'Helvetica Neue',Helvetica, "Microsoft YaHei",sans-serif;
 }
 .e7_div ul li{
-    float: left;
     transition: .5s;
 }
 .e7_div ul .fir{
@@ -24,7 +17,6 @@ body{
     background-color: #0c5ca5;
 }
 .e7_div ul li a{
-    color: #444444;
     font-size: 14px;
     padding: 0 20px;          
 }
@@ -32,7 +24,6 @@ body{
     color:#fff;
 }
 .right_input {
-    float: right;
     width: 170px;
     height: 26px;
     margin-top: 12px;
@@ -53,10 +44,8 @@ body{
     padding: 3px 15px;
     line-height: 20px;
     box-sizing:border-box;
-    outline: none;
     background-color: transparent;
     vertical-align: top;
-    font-size: 14px;
     color: #666;
     border: 0;
 }
@@ -116,7 +105,6 @@ body{
 }
 .content_blue_text .t_d p{
     margin-bottom: 15px;
-    text-align: justify;
 }
 .t_d_d{
     margin-top: 30px;
@@ -127,7 +115,6 @@ body{
 .t_d_d p{
     font-size: 22px;
     font-weight: bold;
-    text-align: justify;
 }
 .right_png{
     width: 520px;
@@ -137,9 +124,6 @@ body{
 .right_png img{
     border: none;
     vertical-align: top;
-}
-.content_left{
-    float: left
 }
 .right_png{
     position: absolute; 

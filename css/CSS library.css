@@ -1,0 +1,52 @@
+a,address,b,big,blockquote,body,center,cite,code,dd,del,div,dl,dt,em,fieldset,font,form,h1,h2,h3,h4,h5,h6,html,i,iframe,img,ins,label,legend,li,ol,p,pre,small,span,strong,u,ul,var,th,td{margin:0; padding:0;}
+body{color:#444;padding:0px 0;
+    font:400 14px/1.6 'Helvetica Neue',Helvetica, "Microsoft YaHei";
+    -webkit-text-size-adjust:none;
+    background:#fff; }
+.w_100{
+    width:100%;
+}
+p{
+    text-align: justify;
+    font-size: 14px;
+}
+a:hover img,img{border:none; vertical-align: top;}
+ol,ul{list-style: none}
+a{text-decoration:none; color:#444;}
+h1,h2,h3,h4,h5,h6{font-weight:400; }
+input,button,select,textarea{
+    outline:none;font:400 14px/1.6 'Helvetica Neue',Helvetica, "Microsoft YaHei",sans-serif,Arial
+}
+.fl{float:left;_display:inline;}
+.fr{float:right;_display:inline;}
+a:hover{color:#0c5ca5;}
+.min_1200{margin: 0 auto; min-width: 1200px;}
+.w_1200{width: 1200px;margin: 0 auto;}
+a{transition: .3s; -moz-transition: .2s; -webkit-transition: .2s;}
+.clearfix2:before,.clearfix2:after{
+    content:""; display: table;
+}
+.clearfix2:after{clear: both;}
+._big_box{
+    margin: 0 auto;
+    padding: 50px 0;
+    min-width: 1200px;
+    background-color: #fff;
+}
+/* 列表效果 */
+.new_ul li::before{
+    width: 0;
+    height: 100%;
+    left: 50%;
+    bottom: 0;
+    background-color:rgba(0,0,0,.02);
+    display: block;
+    position: absolute;
+    content: "";
+    transition: .3s;
+    z-index: -1;
+    transform: translateX(-50%);
+}
+.new_ul li:hover::before{
+    width: 100%;
+} 

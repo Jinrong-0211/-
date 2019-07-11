@@ -1,28 +1,6 @@
-._big_box{
-    min-width: 1200px;
-    margin: 0 auto;
-    padding: 50px 0;
-    background-color: #fff;
-}
-._big_box::before,._big_box::after{
-    content: "";
-    display: table;
-}
-._big_box::after{
-    clear: both;
-}
-.w_1200{
-    width: 1200px;
-    margin: 0 auto;
-}
-.w_1200 dl{
-    width: 1200px;
-    margin: 0 auto;
-}
 .w_1200 dl dt{
     width: 600px;
     margin-left:100px;
-    float: right; 
 }
 .w_1200 dl dd{
     font-size: 16px;
@@ -30,49 +8,26 @@
     padding-top: 8px;
     line-height: 2;
 }
-p{
-    text-align: justify;
-}
 /* box_shadow */
 .box_shadow{
     box-shadow:0 -20px 20px rgba(0,0,0,.08);
     background-color: #fff;
-    margin: 0 auto;
-    min-width: 1200px;
-}
-.box_shadow::before,.box_shadow::after{
-    content: "";
-    display: table;
-}
-.box_shadow::after{
-    clear: both;
 }
 .box_shadow>ul{
     margin: 50px 0;
     text-align: center;
 }
-.box_shadow ul::before,.box_shadow ul::after{
-    content: "";
-    display: table;
-}
-.box_shadow ul::after{
-    clear: both;
-}
 .box_shadow ul li{
-    float: left;
     width: 12.5%;
 }
 .box_shadow ul li a{
     padding: 25px 15px;
     text-align: center;
     display: block;
-    transition: all .3s linear;
-    color: #444;
 }
 .box_shadow ul li a:hover{
     box-shadow: 0 10px 15px rgba(0,0,0,.2);
     transform: translateY(-5px);
-    color: #0c5ca5;
 }
 .box_shadow ul li a span{
     width: 90px;
@@ -128,24 +83,14 @@ p{
     height: 70px;
 }
 .gray_bj .scroll .tempWrap ul{
-    width: 100%;
     position: relative;
     overflow: hidden;
 }
 .gray_bj .scroll .tempWrap ul li{
-    float: left;
     width: 190px;
     text-align: center;
 }
-.gray_bj .scroll .tempWrap ul li a{
-    transition: all .3s linear;
-}
-.gray_bj .scroll .tempWrap ul li a:hover{
-    color: #0c5ca5;
-}
 .gray_bj .scroll .tempWrap ul li a img{
-    border: none;
-    vertical-align: top;
     width: 100%;
     height: 100%;
     overflow: hidden;

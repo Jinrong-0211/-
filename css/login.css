@@ -1,8 +1,8 @@
-*{margin:0;padding:0;}
-html{width:100%;height:100%;}
-body{
-    background:url("../恒力集团OA云办公/bj1.jpg") no-repeat ;
+html,body{height: 100%}
+.content{
+    background:url("../恒力集团OA云办公/bj1.jpg") no-repeat  center bottom;
     background-size: 100% 100%;
+    height: 100%;
 }
 .h-150{
     height:150px;
@@ -41,7 +41,6 @@ body{
     width:210px;
     height:25px;
     border:0;
-    outline:0;
     vertical-align:middle;
     font-size:14px;
     padding-left:10px;
@@ -62,7 +61,6 @@ body{
     position:relative;
 }
 .gotupwd a{
-    text-decoration:none;
     color:#D5E7E4 !important;
     font-size:14px;	
     display:inline-block;
@@ -86,7 +84,6 @@ body{
     background:url("../恒力集团OA云办公/btn_login_wev9.png")
 }
 .footer{
-    width:100%;
     color:#fff;
     position:fixed;
     left:0px;bottom:0px;

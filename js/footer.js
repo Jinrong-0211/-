@@ -1,6 +1,6 @@
 (function footer(){
     var foot=`
-    <div class="footer_white">
+    <div class="footer_white w_100">
         <div class="w_1200">
             <a href="#">版权保护</a>
             <em>|</em>
@@ -10,15 +10,15 @@
         </div>
     </div>
     <!-- 最下面 -->
-    <div class="footer_bottom">
+    <div class="footer_bottom clearfix2">
         <div class="w_1200">
-            <div class="top_link">
-                <div class="right"  style="padding-right: 10px">
+            <div class="top_link clearfix2">
+                <div class="right fr"  style="padding-right: 10px">
                         <img src="../恒力集团/wechat_90.png" alt="">
                         <img src="../恒力集团/wechat_90_2.png" alt="">
                 </div>
                 <div class="left">
-                    <a href="#" class="footer_link">恒力报数字版链接</a>
+                    <a href="#" class="footer_link fl">恒力报数字版链接</a>
                     <select class="select_box">
                         <option value="#">恒力下属企业链接</option>
                         <option value="#">恒力石化股份有限公司</option>
@@ -36,10 +36,10 @@
                 </div>
             </div>
             <div class="bottom_text">
-                <div class="text_left">
+                <div class="text_left fl">
                     Copyright © 1994-2019 By 恒力集团有限公司版权所有 All Rights Reserved
                 </div>
-                <div class="text_right">
+                <div class="text_right fr">
                     <a href="#">苏ICP备11074258号</a>
                     <a href="#">
                         <img src="../恒力集团/ghs.png" style="vertical-align: middle;margin:0 2; ">
