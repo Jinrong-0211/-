@@ -1,8 +1,8 @@
 (function(){
     var header_nav= `
-    <div class="header_fixed">
-    <ul>
-        <li class="img">
+    <div class="header_fixed w_100">
+    <ul class="w_1200">
+        <li class="img clearfix2 ">
             <img src="../hengli/logo.png">  
         </li>
         <li class="img">
@@ -66,7 +66,8 @@
             </ul>
         </li>
         <li>
-            <div class="input"></div>
+            <input type="button"></input>
+            <input type="text">
         </li>
         <li class="email">
             <div id="email_png"></div>
@@ -86,3 +87,4 @@ function nav_active(li_index){
    var header_ul_lis=header_ul.children;//获取ul里的li里的ul
    header_ul_lis[li_index].setAttribute("class","nav_li_active");
 }
+
