@@ -1,0 +1,45 @@
+.f_tab_nav{
+    text-align: center;
+    font-size: 22px;
+    line-height: 50px;
+    margin: 30px 0;
+}
+.f_tab_nav li{
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 0;
+    vertical-align: top;
+}
+.f_tab_nav a{
+    display: inline-block;
+    padding: 0 30px;
+    color: #666;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0,0,0,0);
+    backface-visibility: hidden;
+    position: relative;
+    transition-property: color;
+    transition-duration:.3s; 
+}
+.f_tab_nav a::before{
+    position: absolute;
+    content: "";
+    display: block;
+    background-color:#ec881e;
+    width:0;
+    height: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    overflow: hidden;
+    z-index: -1;
+}
+.f_tab_nav a:hover{
+    color: #666;
+}
+.f_tab_nav a:hover::before{
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+    background-color:rgba(0,0,0,.05);
+}

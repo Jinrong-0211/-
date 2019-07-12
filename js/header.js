@@ -83,8 +83,8 @@
 document.getElementById("nav_div").innerHTML=header_nav;
 })();
 function nav_active(li_index){
-   var header_ul=document.getElementsByClassName("header_fixed")[0].children[0];//获取ul里的li
-   var header_ul_lis=header_ul.children;//获取ul里的li里的ul
-   header_ul_lis[li_index].setAttribute("class","nav_li_active");
+    var header_ul=document.getElementsByClassName("header_fixed")[0].children[0];//获取ul里的li
+    var header_ul_lis=header_ul.children;//获取ul里的li里的ul
+    header_ul_lis[li_index].setAttribute("class","nav_li_active");
 }
 
