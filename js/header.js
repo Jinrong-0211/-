@@ -50,7 +50,7 @@
         <li>
             <a href="#">社会责任</a>
             <ul class="dropdown_menu">
-                <li><a href="">慈善基金会</a> </li>
+                <li><a href="../html/five_1.html">慈善基金会</a> </li>
                 <li><a href="">社会公益</a> </li>
                 <li><a href="">环境保护</a> </li>
                 <li><a href="">安全生产</a> </li>

@@ -1,3 +1,4 @@
+/* 导航nav */
 .f_tab_nav{
     text-align: center;
     font-size: 22px;
@@ -43,3 +44,236 @@
     transition: .3s;
     background-color:rgba(0,0,0,.05);
 }
+.f_tab_nav .li_tab{
+    color: #fff;
+}
+.f_tab_nav .li_tab::before{
+    width: 100%;
+    height: 100%;
+}
+/* 坐标700nav */
+.top_fix{
+    position: fixed;
+    top: 70px;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    z-index: 11;
+    box-shadow: 0 10px 15px rgba(0,0,0,.08);
+    background-color: #0c5ca5
+}
+.top_fix .f_tab_nav{
+    margin: 0;
+}
+.top_fix .f_tab_nav a{
+    color: #fff;
+}
+/* 阴影盒子  恒力善行*/
+.box_shadow{
+    box-shadow: 0 -20px 20px rgba(0,0,0,.08);
+}
+.text_32{
+    font-size: 32px;
+    line-height: 1.2;
+    margin: 10px 0;
+    color: #0c5ca5;
+}
+.foundation_text{
+    margin:30px 0;
+    line-height: 2;
+}
+.foundation_text p{
+    margin: 15px 0;
+    text-indent: 2em;
+    font-size: 16px;
+}
+.hide_box{
+    height: auto;
+    overflow: hidden;
+}
+.foundation_ul{
+    margin: 0 -30px 0 0;
+    padding-top: 10px;
+}
+.foundation_ul .box{
+    padding: 0;
+    margin-right: 30px;
+    height: 315px;
+    background-color: #e7e7e7;
+    position: relative;
+}
+.transition_a{
+    transition: all .3s linear;
+}
+.honor_ul .line{
+    position: absolute;
+    background-color: #ec881e;
+    font-size: 0;
+    overflow: hidden;
+}
+.list li{
+    float:left;
+    width: 33.33%;
+    margin: 0 0 30px 0;
+}
+.line_t{
+    top: 0;
+    left: 0;
+}
+.line_d{
+    bottom: 0;
+    right: 0;
+}
+.line_t,.line_d{
+    width: 0;
+    height: 2px;
+}
+.line_l{
+    top: 0;
+    left: 0;
+}
+.line_r{
+    bottom: 0;
+    right: 0;
+}
+.line_l,.line_r{
+    width: 2px;
+    height: 0px;
+}
+.foundation_ul .pic{
+    height: 260px;
+    margin: 0;
+    text-align: center;
+}
+.foundation_ul h5{
+    margin-top: 0;
+    font-size: 18px;
+    height: 55px;
+    line-height: 55px;
+}
+.honor_ul h5{
+    text-align: center;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0,0,0,0);
+    backface-visibility: hidden;
+    position: relative;
+    transition-property: color;
+    transition-duration: .3s;
+}
+.honor_ul h5::before{
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+    background-color: #ec881e;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .3s;
+    font-size: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+.honor_ul .box:hover{
+    background-color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 20px rgba(236,136,30,.15);
+}
+.box:hover .line_t, .box:hover .line_d{
+    width: 100%;
+}
+.box:hover .line_l, .box:hover .line_r{
+    height: 100%;
+}
+.box:hover h5::before{
+    width: 100%;
+}
+.box:hover h5{
+    color: #fff;
+}
+/* 基金会架构 */
+.gray_bj{
+    background-color: #e7e7e7;
+}
+.box_father{
+    position: relative;
+    overflow: hidden;
+}
+.box_w2{
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+.foundation_t2 .pic{
+    color: #fff;
+    width: 50%;
+    height: 100%;
+    background-image: url("../five_1/box_pic.jpg");
+    background-repeat: no-repeat;
+}
+.foundation_t2 .pic h4{
+    font-size: 24px;
+    padding: 135px 0 25px 0;
+}
+.t_r{
+    width: 50%;
+    height: 600px;
+}
+.img_425{
+    width: 425px;
+}
+.box_mr70{
+    margin-right: 70px;
+}
+.foundation_t2 .th_text_32{
+    padding: 60px 0 0 0;
+    font-size: 32px;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+.foundation_text{
+    font-size: 16px;
+    margin: 30px 0;
+    line-height: 2;
+}
+.th_text_24{
+    font-size: 24px;
+    line-height: 1.2;
+}
+/* 基金会章程  star 滚动条 */
+.Sc_container{
+    overflow-y:auto;
+}
+.Sc_container::-webkit-scrollbar{
+    width: 8px;
+    height: 30px;
+    background-color: #bdbdbd;
+    opacity: .3;
+}
+.Sc_container::-webkit-scrollbar-track  
+{  
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;  
+    background-color: #fff;  
+    opacity: .3;
+} 
+.Sc_container::-webkit-scrollbar-thumb  
+{   height: 10px;
+    border-radius: 10px;  
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);  
+    background-color: #eee;  
+    opacity:.3;
+} 
+.Sc_container::-webkit-scrollbar-thumb:hover
+{
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.4);
+    opacity: .3;
+}
+.box_m40{
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+

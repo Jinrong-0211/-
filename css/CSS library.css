@@ -50,3 +50,20 @@ a{transition: .3s; -moz-transition: .2s; -webkit-transition: .2s;}
 .new_ul li:hover::before{
     width: 100%;
 } 
+.img_w{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.h_600{
+    height: 600px;
+}
+.w_600{
+    width: 600px;
+}
+.text_c{
+    text-align: center;
+}
+.blue_text{
+    color: #0c5ca5;
+}
