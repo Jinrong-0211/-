@@ -32,6 +32,7 @@
 			background-repeat:no-repeat;
 			background-image:url("../hengli/icon_a.png");	
 			background-size:270px auto;
+			transition:all .3s linear;
 		}
 		.scroll>ul>li>div>h4{
 			width:150px;
@@ -39,11 +40,12 @@
 			font-size:18px;
 			font-weight:400;
 		}
-		.scroll>ul>li:hover h4{
+		.hover{
 			color:#00954c;
+			/*  */
 		}
-		.scroll>ul>li:hover{
-			border-bottom:4px solid #00954c;
+		.hover_div{
+			border-bottom:4px solid #00954c !important;
 		}
 		.scroll>ul div #s2{
 			background-position:0 -90px;

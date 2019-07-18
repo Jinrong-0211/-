@@ -17,13 +17,19 @@ function qh(obj){
 			//获取背景图
 			var arr_span=arr_ulli[i].getElementsByTagName("span")[0];
 			arr_span.setAttribute("style","background-position:0px -"+i*90+"px;");
+			
+			var arr_h4=arr_ulli[i].getElementsByTagName("h4")[0];
+			arr_h4.className="";
+			arr_ulli[i].className="fl";
 			//判断是否为鼠标悬停的li
 			if (arr_ulli[i]==obj)
 			{		
 				//如果是，背景变绿
-					arr_span.setAttribute("style","background-position:-90px -"+i*90+"px;");
-					//如果是，显示文本div
-					arr_text_li[i].style.display="block";
+				arr_span.setAttribute("style","background-position:-90px -"+i*90+"px;");
+				//如果是，显示文本div
+				arr_text_li[i].style.display="block";				
+				arr_ulli[i].className="fl hover_div";
+				arr_h4.className="hover";
 			}
 		}
 	}

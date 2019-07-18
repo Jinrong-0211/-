@@ -250,6 +250,7 @@
     height: 30px;
     background-color: #bdbdbd;
     opacity: .3;
+    border-radius: 10px; 
 }
 .Sc_container::-webkit-scrollbar-track  
 {  
