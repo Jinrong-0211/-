@@ -42,10 +42,12 @@
 		}
 		.hover{
 			color:#00954c;
-			/*  */
 		}
 		.hover_div{
 			border-bottom:4px solid #00954c !important;
+		}
+		.scroll>ul div #s1{
+			background-position:-90px 0px;
 		}
 		.scroll>ul div #s2{
 			background-position:0 -90px;
@@ -91,9 +93,24 @@
 			overflow: hidden;
 			background-repeat: no-repeat;
 		}
+		.btn_hover:hover{
+			background-color: #f3f3f3;
+			cursor: pointer;
+		}
+		.btn_hover_stop_left{
+			cursor: default;
+			background-position:0 -70px;
+			background-color:transparent;
+		}
+		.btn_hover_stop_right{
+			cursor: default;
+			background-position:-70px -70px !important;
+			background-color:transparent;
+		}
 		.scroll_text>.btn_left{	
 			background-image: url("../hengli/btn_icon.png");
 			background-size: 140px;
+			/* background-position: 0 -70px; */
 		}
 		.scroll_text .btn_right{
 			background-image: url("../hengli/btn_icon.png");
@@ -213,6 +230,7 @@
 			font-weight: bold;
 		}
 		.gray_more_a a:hover{
+			color:#fff;
 			background-color: #0c5ca5;
 			transform: translateY(-2px);
 		}

@@ -1,65 +1,67 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>恒力集团</title>
-		<link rel="stylesheet" href="../css/header.css">
-		<link rel="stylesheet" href="../css/index.css">
-		<link rel="stylesheet" href="../css/footer.css">
-		<link rel="stylesheet" href="../css/CSS library.css">
-	</head>
+
+<head>
+	<meta charset="UTF-8">
+	<title>恒力集团</title>
+	<link rel="stylesheet" href="../css/header.css">
+	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/footer.css">
+	<link rel="stylesheet" href="../css/CSS library.css">
+</head>
+
 <body>
 	<div id="nav_div"></div>
 	<!-- banner1 -->
 	<div class="banner" id="banner">
 		<img src="../hengli/20190314100448119.jpg" id="img1">
 	</div>
-<!-- scroll 滚动图 -->
-	<div class="scroll">
+	<!-- scroll 滚动图 -->
+	<div class="scroll" id="scroll_div">
 		<ul>
-			<li onmouseover="qh(this)" id="ly" class="fl">
-					<div>
-						<span id="s1" class=""></span>
-						<h4>炼油</h4>
-					</div>
-				</li>
-				<li onmouseover="qh(this)" class="fl">
-					<div>
-						<span id="s2" class=""></span>
-						<h4>石化</h4>
-					</div>
+			<li class="fl hover_div" data-text="text1" >
+				<div >
+					<span id="s1"></span>
+					<h4 class="hover">炼油</h4>
+				</div>
 			</li>
-			<li onmouseover="qh(this)" class="fl">
+			<li class="fl" data-text="text2">
+				<div>
+					<span id="s2" class=""></span>
+					<h4>石化</h4>
+				</div>
+			</li>
+			<li class="fl" data-text="text3">
 				<div>
 					<span id="s3" class=""></span>
 					<h4>精细化工</h4>
 				</div>
 			</li>
-			<li onmouseover="qh(this)" class="fl">
-					<div>
-						<span id="s4" class=""></span>
-						<h4>化纤</h4>
-					</div>
-				</li>
-				<li onmouseover="qh(this)" class="fl">
-						<div>
-							<span id="s5" class=""></span>
+			<li class="fl" data-text="text4" >
+				<div>
+					<span id="s4" class=""></span>
+					<h4>化纤</h4>
+				</div>
+			</li>
+			<li class="fl" data-text="text5">
+				<div>
+					<span id="s5" class=""></span>
 					<h4>工程塑料</h4>
 				</div>
 			</li>
-			<li onmouseover="qh(this)" class="fl">
-					<div>
-						<span id="s6" class=""></span>
-						<h4>薄膜</h4>
-					</div>
-				</li>
-				<li onmouseover="qh(this)" class="fl">
-						<div>
-							<span id="s7" class=""></span>
-							<h4>纺织</h4>
-						</div>
+			<li class="fl" data-text="text6">
+				<div>
+					<span id="s6" class=""></span>
+					<h4>薄膜</h4>
+				</div>
 			</li>
-			<li onmouseover="qh(this)" class="fl"> 
+			<li class="fl" data-text="text7">
+				<div>
+					<span id="s7" class=""></span>
+					<h4>纺织</h4>
+				</div>
+			</li>
+			<li class="fl" data-text="text8">
 				<div class="last">
 					<span id="s8" class=""></span>
 					<h4>贸易</h4>
@@ -68,8 +70,8 @@
 		</ul>
 	</div>
 	<!-- scroll 文本 -->
-	<div class="scroll_text w_1200">
-		<div class="btn_left btn fr"></div>	
+	<div class="scroll_text w_1200" id="scroll_text">
+		<div class="btn_left btn fr btn_hover_stop_left"></div>
 		<ul>
 			<li class="text1">
 				<h5>炼油</h5>
@@ -80,7 +82,7 @@
 					</div>
 					<div class="wenben">
 						恒力2000万吨/年炼化一体化项目，是列入国务院文件的重大民营炼化项目，也是新一轮东北振兴的战略项目，以960万吨连续重整、450万吨芳烃联合装置为核心，总加氢能力超过2700万吨。秉承“10年不落后”的理念，恒力高起点战略、高标准规划、高质量建设、高水平开车、高效率管理，创造了世界石油化工行业工程建设速度、全流程开车投产速度和达产速度最快的行业记录，成为行业高质量发展的标杆。
-					</div>				
+					</div>
 				</div>
 			</li>
 			<li class="text2">
@@ -103,7 +105,8 @@
 						<span></span>
 					</div>
 					<div class="wenben">
-						为充分发挥炼化一体化优势，恒力石化（大连长兴岛）产业园建设150万吨/年乙烯和180万吨/年乙二醇项目，采用Technip、Scientific Design等先进工艺技术，利用炼化项目生产的石脑油和干气作为原料，建设全球规模最大的乙烯、乙二醇和苯乙烯等装置，可大大降低我国对乙二醇、聚烯烃等高端化工原料的进口依赖度。
+						为充分发挥炼化一体化优势，恒力石化（大连长兴岛）产业园建设150万吨/年乙烯和180万吨/年乙二醇项目，采用Technip、Scientific
+						Design等先进工艺技术，利用炼化项目生产的石脑油和干气作为原料，建设全球规模最大的乙烯、乙二醇和苯乙烯等装置，可大大降低我国对乙二醇、聚烯烃等高端化工原料的进口依赖度。
 					</div>
 				</div>
 			</li>
@@ -167,21 +170,22 @@
 					</div>
 				</div>
 			</li>
-		</ul>	
-		<div class="btn_right btn"></div>
+		</ul>
+		<div class="btn_right btn btn_hover"></div>
 	</div>
 	<!-- banner2 -->
 	<div class="banner2">
 		<div class="box_1166">
-			<!-- 按钮 -->				
-				<div class="right_btn _btn"></div>
-				<div class="left_btn _btn"></div>
+			<!-- 按钮 -->
+			<div class="right_btn _btn"></div>
+			<div class="left_btn _btn"></div>
 			<ul class="clearfix2">
 				<!-- 第一个 -->
 				<li>
 					<div class="left_img fl">
-						<a href="#">
-							<img style="width:100%; height:100%; overflow: hidden;" src="../hengli/20190511155130595.jpg" alt="" >
+						<a href="javascript:;">
+							<img style="width:100%; height:100%; overflow: hidden;"
+								src="../hengli/20190511155130595.jpg" alt="">
 						</a>
 					</div>
 					<div class="right_box fr">
@@ -194,15 +198,16 @@
 								</div>
 								<div class="right">
 									<h5>
-										<a href="#">南通市、通州区大力支持恒科新材料新项目发展</a>
+										<a href="javascript:;">南通市、通州区大力支持恒科新材料新项目发展</a>
 									</h5>
 								</div>
 							</div>
 							<div class="text">
-								6月23日，南通市通州区委副书记、区长凌屹率队来访恒力，恒力集团董事长、总裁陈建华，副董事长范红卫热情接待并交流洽谈相关工作； 6月26日，南通市委副书记沈雷、副市长吴永宏带领市工信局、市人社局、市自然资源局、市税务局、市供电公司等市直有关部门负责人调研恒力（南通）纺织新材料产业园。南通市通州区委书记陈永红、副区长成小红等陪同调研。                              
+								6月23日，南通市通州区委副书记、区长凌屹率队来访恒力，恒力集团董事长、总裁陈建华，副董事长范红卫热情接待并交流洽谈相关工作；
+								6月26日，南通市委副书记沈雷、副市长吴永宏带领市工信局、市人社局、市自然资源局、市税务局、市供电公司等市直有关部门负责人调研恒力（南通）纺织新材料产业园。南通市通州区委书记陈永红、副区长成小红等陪同调研。
 							</div>
 							<div class="gray_more_a">
-								<a href="#">查看更多</a>
+								<a href="javascript:;">查看更多</a>
 							</div>
 						</div>
 					</div>
@@ -218,15 +223,15 @@
 				<div class="t_l_m">
 					<p>
 						关于恒力
-恒力集团始建于1994年，立足主业，坚守实业，是以炼油、石化、聚酯新材料和纺织全产业链发展的国际型企业。集团现拥有全球单体产能最大的PTA工厂之一、全球最大的功能性纤维生产基地和织造企业之一，员工8万多人，建有国家“企业技术中心”，企业竞争力和产品品牌价值均列国际行业前列。
+						恒力集团始建于1994年，立足主业，坚守实业，是以炼油、石化、聚酯新材料和纺织全产业链发展的国际型企业。集团现拥有全球单体产能最大的PTA工厂之一、全球最大的功能性纤维生产基地和织造企业之一，员工8万多人，建有国家“企业技术中心”，企业竞争力和产品品牌价值均列国际行业前列。
 					</p>
 					<p>
-						
-恒力集团2018年总营收3717亿元,现位列世界500强第235位、中国企业500强第51位、中国民营企业500强第9位、中国制造业企业500强第16位，获国务院颁发的“国家科技进步奖”和“全国就业先进企业”等殊荣。
+
+						恒力集团2018年总营收3717亿元,现位列世界500强第235位、中国企业500强第51位、中国民营企业500强第9位、中国制造业企业500强第16位，获国务院颁发的“国家科技进步奖”和“全国就业先进企业”等殊荣。
 					</p>
 				</div>
 				<div class="t_l_btn">
-					<a href="#">查看更多</a>
+					<a href="javascript:;">查看更多</a>
 				</div>
 			</div>
 		</div>
@@ -247,7 +252,7 @@
 								<p>———记德力化纤 2019年“江苏省五一劳动奖章”获得者倪凤军</p>
 							</div>
 							<div class="t_d">
-								<a href="#">查看更多</a>
+								<a href="javascript:;">查看更多</a>
 							</div>
 						</div>
 					</li>
@@ -259,7 +264,7 @@
 								<p>———记德力化纤 2019年“江苏省五一劳动奖章”获得者倪凤军</p>
 							</div>
 							<div class="t_d">
-								<a href="#">查看更多</a>
+								<a href="javascript:;">查看更多</a>
 							</div>
 						</div>
 					</li>
@@ -271,7 +276,7 @@
 								<p>———记德力化纤 2019年“江苏省五一劳动奖章”获得者倪凤军</p>
 							</div>
 							<div class="t_d">
-								<a href="#">查看更多</a>
+								<a href="javascript:;">查看更多</a>
 							</div>
 						</div>
 					</li>
@@ -281,10 +286,11 @@
 	</div>
 	<!-- 底部 -->
 	<div id="footer"></div>
+	<script src="../js/jQuery/jquery-1.11.3.js"></script>
 	<script src="../js/header.js"></script>
 	<script src="../js/banner1.js"></script>
 	<script src="../js/index.js"></script>
 	<script src="../js/footer.js"></script>
-	
 </body>
+
 </html>

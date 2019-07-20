@@ -1,6 +1,4 @@
-(function(){
-    var header_nav= `
-    <div class="header_fixed w_100">
+<div class="header_fixed w_100">
     <ul class="w_1200">
         <li class="img clearfix2 ">
             <img src="../hengli/logo.png">  
@@ -20,7 +18,7 @@
                 <li><a href="../html/two_4.html">集团资质</a> </li>
                 <li><a href="../html/two_5.html">党群工作</a> </li>
                 <li><a href="../html/two_6.html">大事预览</a> </li>
-                <li><a href="../html/two_7.html">恒力文化</a> </li>
+                <li><a href="#">恒力文化</a> </li>
             </ul>
         </li>
         <li>
@@ -66,7 +64,7 @@
             </ul>
         </li>
         <li >
-            <input type="button" ></input>
+            <input type="button">
             <input type="text" placeholder="请输关键字" >
         </li>
         <li class="email">
@@ -79,11 +77,3 @@
         </li>					
     </ul>
 </div> 
-    `;
-document.getElementById("nav_div").innerHTML=header_nav;
-})();
-function nav_active(li_index){
-    var header_ul=document.getElementsByClassName("header_fixed")[0].children[0];//获取ul里的li
-    var header_ul_lis=header_ul.children;//获取ul里的li里的ul
-    header_ul_lis[li_index].setAttribute("class","nav_li_active");
-}

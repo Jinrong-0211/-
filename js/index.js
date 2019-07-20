@@ -1,39 +1,50 @@
-function qh(obj){
-	//获取滚动图div
-	var arr=document.getElementsByClassName("scroll")[0];
-	//获取文本的div
-    var arr_text=document.getElementsByClassName("scroll_text")[0];
-	//获取滚动图的每一个li
-	var arr_ulli=arr.getElementsByTagName("li");
-	//获取文本的每一个li
-	var arr_text_li=arr_text.getElementsByTagName("li");
-	//判断li数组是否为空
-	if (arr_ulli.length>0&&arr_text_li.length>0)
-	{
-		for (var i=0;i<arr_ulli.length ;i++ )
-		{	
-			//默认为隐藏
-			arr_text_li[i].style.display="none";
-			//获取背景图
-			var arr_span=arr_ulli[i].getElementsByTagName("span")[0];
-			arr_span.setAttribute("style","background-position:0px -"+i*90+"px;");
-			
-			var arr_h4=arr_ulli[i].getElementsByTagName("h4")[0];
-			arr_h4.className="";
-			arr_ulli[i].className="fl";
-			//判断是否为鼠标悬停的li
-			if (arr_ulli[i]==obj)
-			{		
-				//如果是，背景变绿
-				arr_span.setAttribute("style","background-position:-90px -"+i*90+"px;");
-				//如果是，显示文本div
-				arr_text_li[i].style.display="block";				
-				arr_ulli[i].className="fl hover_div";
-				arr_h4.className="hover";
-			}
-		}
+(function(){
+	nav_active(2);
+})();
+$("#scroll_div").on("mouseenter","li",function(){
+	var $li=$(this);
+	var i=$li.index();
+	$("#scroll_text>ul li").hide();
+	$("#scroll_div>ul li").removeClass("hover_div");
+	$("#scroll_div>ul li h4").removeClass("hover");
+	var siblings=$li.siblings();
+	siblings.each((j,elem)=>{
+		if(j>=i)j++;
+		$(elem).children().children("span").css("background-position",`0px -${j*90}px`);
+	});
+	$("."+$li.attr("data-text")).show();
+	$li.addClass("hover_div");
+	$li.children().children("h4").addClass("hover");
+	$li.children().children("span").css("background-position",`-90px -${i*90}px`)
+	var $btn_left=$("#scroll_text>div.btn_left");
+	var $btn_right=$("#scroll_text>div.btn_right");
+	if(i==0){
+		$btn_left.addClass("btn_hover_stop_left").removeClass("btn_hover")
+	}else if(i==7){
+		$btn_right.addClass("btn_hover_stop_right").removeClass("btn_hover")
+	}else{
+		$btn_left.removeClass ("btn_hover_stop_left").addClass("btn_hover")
+		$btn_right.removeClass("btn_hover_stop_right").addClass("btn_hover")
 	}
-}
-		(function(){
-			nav_active(2);
-		})();
+});
+// 左侧按钮
+$("#scroll_text>div.btn_left").click(function(){
+	var text=$("#scroll_text>ul>li:visible").prop("class");
+	var num=text.substr(-1,1);//截取text后的数字
+	if(num>1)
+	{//如果大于第一个，那么就可以进行后退
+		num--;
+		$(`[data-text=text${num}]`).mouseenter();
+	}
+})
+//右侧按钮
+$("#scroll_text>div.btn_right").click(function(){
+	var text=$("#scroll_text>ul>li:visible").prop("class");
+	var num=text.substr(-1,1);
+	console.log(num)
+	if(num<8)
+	{//如果小于第八个，那么就进行前进
+		num++;
+		$(`[data-text=text${num}]`).mouseenter();
+	}
+})
