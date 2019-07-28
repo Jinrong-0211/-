@@ -1,7 +1,62 @@
 		/*banner*/
-		.banner img{
-			width:100%;
+		.banner{
+			height: 850px;
+			position: relative;
+			height: 850px;
+			overflow: hidden;
+		}
+		.banner ul.bd{
+			height: 5100px;
+			position: relative;
+			padding: 0px;
+			margin: 0px;
+			top: 0;
+			height: 850px;
+		}
+		.banner ul.bd li{
+			position: relative;
+			height: 850px;
+			background-repeat: no-repeat;
+			background-position: 50% 0;
+			background-size: cover;
+			overflow: hidden;
+		}
+		/* banner 小方框 */
+		.banner ul.hd{
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 5%;
+			box-sizing: border-box;
+			text-align: right;
+		}
+		.banner ul.hd li{
+			cursor: pointer;
+			margin: 20px 0;
+			overflow: hidden;
 			font-size: 0;
+			width: 16px;
+			height: 16px;
+			border: 2px solid #fff;
+			background-color: transparent;
+			position: relative;
+		}
+		.banner ul.hd li::before{
+			display: block;
+			position: absolute;
+			content: "";
+			top:50%;
+			left: 50%;
+			transform: translateX(-50%) translateY(-50%);
+			width: 0;
+			height: 0;
+			font-size: 0;
+			overflow: hidden;
+			background-color:#fff;
+			transition: .3s; 
+		}
+		.banner ul.hd .on{
+			background-color: transparent;
 		}
 		/*scroll*/
 		.scroll{

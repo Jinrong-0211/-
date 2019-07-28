@@ -1,6 +1,21 @@
 (function(){
 	nav_active(2);
 })();
+// function nav_active(li_index){
+//     var header_ul=document.getElementsByClassName("header_fixed")[0].children[0];//获取ul里的li
+//     var header_ul_lis=header_ul.children;//获取ul里的li里的ul
+// //     header_ul_lis[li_index].setAttribute("class","nav_li_active");
+// // }
+// //引入头文件
+// $.ajax(
+// 	{
+// 		url:"../html/header.html",
+// 		type:"get",
+// 		success:function(result){
+// 			$("#nav_div").html()=result;
+// 		}
+// 	}
+// )
 $("#scroll_div").on("mouseenter","li",function(){
 	var $li=$(this);
 	var i=$li.index();
@@ -48,3 +63,4 @@ $("#scroll_text>div.btn_right").click(function(){
 		$(`[data-text=text${num}]`).mouseenter();
 	}
 })
+
