@@ -5,7 +5,6 @@ var isload = false;
             url: "../html/header.html",
             type: "get",
             success: function (result) {
-
                 $("#nav_div").html(result);
                 $(`<link rel="stylesheet" href="../css/header.css">`).appendTo("head");
                 isload = true;
@@ -13,7 +12,7 @@ var isload = false;
         }
     )
 })();
-
+//导航下蓝线
 function nav_active(li_index) {
     var timer = setInterval(() => {
         if (isload) {

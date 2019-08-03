@@ -9,10 +9,14 @@
 			height: 5100px;
 			position: relative;
 			padding: 0px;
+			top:0;
 			margin: 0px;
-			top: 0;
 			height: 850px;
 		}
+		.transition{
+			transition: top .5s linear;
+		}
+
 		.banner ul.bd li{
 			position: relative;
 			height: 850px;
@@ -48,16 +52,18 @@
 			top:50%;
 			left: 50%;
 			transform: translateX(-50%) translateY(-50%);
-			width: 0;
-			height: 0;
+			width: 0px;
+			height: 0px;
 			font-size: 0;
 			overflow: hidden;
 			background-color:#fff;
-			transition: .3s; 
+			transition:all .3s linear; 
 		}
-		.banner ul.hd .on{
-			background-color: transparent;
+		.banner ul.hd li.on::before{
+			width: 10px;
+			height: 10px;
 		}
+
 		/*scroll*/
 		.scroll{
 			width:1200px;

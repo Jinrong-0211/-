@@ -1,12 +1,6 @@
 (function(){
 	nav_active(2);
 })();
-// function nav_active(li_index){
-//     var header_ul=document.getElementsByClassName("header_fixed")[0].children[0];//获取ul里的li
-//     var header_ul_lis=header_ul.children;//获取ul里的li里的ul
-// //     header_ul_lis[li_index].setAttribute("class","nav_li_active");
-// // }
- //引入头文件
 
 $("#scroll_div").on("mouseenter","li",function(){
 	var $li=$(this);
