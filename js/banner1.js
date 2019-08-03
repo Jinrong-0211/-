@@ -23,16 +23,17 @@ $(function () {
 //定时器
 function moveTo() {
     timer = setInterval(() => {
+        var $ul=$("#banner>ul.bd");
         if (times == 1) {
-            $("#banner>ul.bd").addClass("transition");
+            $ul.addClass("transition");
         }
-        $("#banner>ul.bd").css("top", times * (-850));
+        $ul.css("top", times * (-850));
         ++times;
         if (times == 5) {
             times = 1;
             setTimeout(() => {
-                $("#banner>ul.bd").removeClass("transition");
-                $("#banner>ul.b1`d").css("top", 0);
+                $ul.removeClass("transition");
+                $ul.css("top", 0);
             }, 600);
         }
         $($("#banner>ul.hd>li")[times - 1]).addClass("on").siblings("li").removeClass("on");
