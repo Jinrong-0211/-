@@ -1,6 +1,5 @@
 		/*banner*/
 		.banner{
-			height: 850px;
 			position: relative;
 			height: 850px;
 			overflow: hidden;
@@ -16,7 +15,6 @@
 		.transition{
 			transition: top .5s linear;
 		}
-
 		.banner ul.bd li{
 			position: relative;
 			height: 850px;
