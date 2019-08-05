@@ -23,7 +23,7 @@ $(function () {
 //定时器
 function moveTo() {
     timer = setInterval(() => {
-        var $ul=$("#banner>ul.bd");
+        var $ul = $("#banner>ul.bd");
         if (times == 1) {
             $ul.addClass("transition");
         }
